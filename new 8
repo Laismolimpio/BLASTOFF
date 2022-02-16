@@ -1,0 +1,29 @@
+using System;
+class Program
+{
+  static void Main(string[] args) 
+  {
+      int num, fatorial, cont;
+      num=0;
+      fatorial=1;
+      
+    Console.WriteLine("Entre com um numero:");
+    num= int.Parse(Console.ReadLine());
+    if (num < 0)
+    {
+     Console.WriteLine("Numero Invalido"); 
+    }
+    else if ((num == 0) || (num == 1)){
+    Console.WriteLine("Fatorial de {0}: ", num);
+    
+    }
+    else{
+        for(cont = num; cont >= 1; cont--)
+        {
+            fatorial *= cont;
+        }
+        Console.WriteLine("Fatorial de {0} eh {1}",num , fatorial);
+    }
+    
+  }
+}

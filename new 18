@@ -1,0 +1,44 @@
+using System;
+public class media_numeros
+
+{
+    
+public static void Main(string[] args)
+    
+{
+        
+double I,J,K,X,Y;
+        
+double media;
+        
+        
+Console.WriteLine ("Entre com a primeira nota");
+        
+I= Convert.ToDouble(Console.ReadLine());
+        
+Console.WriteLine ("Entre com a segunda nota");
+        
+J= Convert.ToDouble(Console.ReadLine());
+        
+Console.WriteLine ("Entre com a terceira nota");
+        
+K= Convert.ToDouble(Console.ReadLine());
+        
+Console.WriteLine ("Entre com a quarta nota");
+        
+X= Convert.ToDouble(Console.ReadLine());
+        
+Console.WriteLine ("Entre com a quinta nota");
+        
+Y= Convert.ToDouble(Console.ReadLine());
+        
+media= (I+J+K+X+Y)/5 ;
+        
+Console.WriteLine("A sua media e: {0}", media);
+       
+       
+Console.ReadKey();
+    
+}
+
+}

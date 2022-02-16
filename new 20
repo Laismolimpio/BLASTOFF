@@ -1,0 +1,37 @@
+using System;
+
+
+
+public class consumo
+
+{
+    
+public static void Main(string[] args)
+    
+{
+        
+double distaA,gastoB ;
+        
+double consumo;
+        
+        
+Console.WriteLine ("Entre com a distância");
+        
+distaA= Convert.ToDouble(Console.ReadLine());
+        
+Console.WriteLine ("Entre com o consumo");
+        
+gastoB= Convert.ToDouble(Console.ReadLine());
+        
+        
+consumo= (gastoB/distaA);
+        
+        
+Console.WriteLine( "o consumo e: {0}", consumo);
+       
+       
+Console.ReadKey();
+    
+}
+
+}

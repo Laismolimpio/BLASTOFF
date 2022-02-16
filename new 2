@@ -1,0 +1,33 @@
+using System;
+
+
+
+public class temperatura
+{
+
+    
+public static void Main(string[] args)
+    
+{
+        
+double  C=0 ,F=0 ;
+        
+      
+        
+Console.WriteLine( "informe a temperatura em fahrenheit:");
+        
+F=Convert.ToInt32(Console.ReadLine());
+        
+        
+C=(double)5/9*(F-32);
+    
+      
+        
+Console.WriteLine( "A TEMPERATURA e: {0}",C);
+       
+       
+Console.ReadKey();
+        
+}
+
+}

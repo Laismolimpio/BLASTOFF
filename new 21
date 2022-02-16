@@ -1,0 +1,67 @@
+using System;
+
+
+
+public class menor_numero
+
+{
+
+    
+public static void Main(string[] args)
+
+    
+{
+        
+int  menor, n1, n2, n3, numero ;
+
+        
+      
+        
+Console.WriteLine( "informe o primeiro numero");
+        
+n1=Convert.ToInt32(Console.ReadLine());
+        
+Console.WriteLine( "informe o segundo numero");
+        
+n2=Convert.ToInt32(Console.ReadLine());
+        
+Console.WriteLine( "informe o terceiro numero");
+        
+n3=Convert.ToInt32(Console.ReadLine());
+        
+    
+        
+if(n1 < n2){
+        
+if(n1 < n3)
+           
+ menor = n1;
+       
+ else
+            
+menor = n3;
+    
+}
+    
+else
+{
+        
+if(n2 < n3)
+            
+menor = n2;
+        
+else
+            
+menor = n3;
+    
+}
+    
+        
+Console.WriteLine( "o menor numero e: {0}",menor);
+       
+       
+Console.ReadKey();
+        
+}
+
+}

@@ -1,0 +1,35 @@
+using System;
+
+
+
+public class duracao
+{
+
+    
+public static void Main(string[] args)
+    
+{
+        
+double  A ,B, duracao;
+        
+      
+        
+Console.WriteLine( "informe A Hora de inicio ");
+       
+A=Convert.ToDouble(Console.ReadLine());
+        
+Console.WriteLine( "informe a hora de fim ");
+        
+B=Convert.ToDouble(Console.ReadLine());
+        
+duracao=(double) B-A;
+        
+        
+Console.WriteLine( "A duracao e: {0}",duracao);
+       
+       
+Console.ReadKey();
+        
+}
+
+}

@@ -1,0 +1,71 @@
+using System;
+using System.Text.RegularExpressions;
+
+namespace palindrome
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("verificando polindromos!\n");
+
+            Console.WriteLine("entre com a palavra.");
+            string input = Console.ReadLine();
+
+            //checa palavra
+            Console.WriteLine("eh a palavra certa? (y/n)");
+            Console.Write("{0}: ", input);
+            string yes_no = Console.ReadLine();
+            if (yes_no == "y" || yes_no == "yes")
+            {
+                Console.WriteLine("Calculating Palindromism... \n");
+                Palindrome.Tester(input);
+            }
+            else
+            {
+                Console.WriteLine("Tente novamente... \n");
+                Main(args); 
+            }
+
+            Console.ReadLine();
+        }
+
+    }
+
+    class Palindrome
+    {
+        
+        public static void Tester(string input)
+        {
+            string pattern = "\\W";
+
+            string data = Regex.Replace(input.ToLower() , pattern, String.Empty);
+
+            if (data == StringHelper.ReverseString(data))
+            {
+                
+                Console.WriteLine("{0} eh palindromo.", input);
+            }
+            else
+            {
+                
+                Console.WriteLine("{0} n eh palindromo.", input);
+            }
+
+        }
+
+    }
+
+    static class StringHelper
+    {
+        
+        public static string ReverseString(string s)
+        {
+            char[] arr = s.ToCharArray();
+            Array.Reverse(arr);
+            return new string(arr);
+        }
+
+    }
+
+}
